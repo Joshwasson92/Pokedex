@@ -12,7 +12,7 @@ for (let i = 0; i < pokeList.length; i++) {
     let pokemonInfo = `<p> Name: ${name} Height: ${height}`
     //Template String - 
     if (height > 4) {
-     pokemonInfo += " That is a large Pokemon! "
+     pokemonInfo += " Wow, Thats big! "
     } 
     if (height < 4) {
         pokemonInfo += " That is a small Pokemon! "
