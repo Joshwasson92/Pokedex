@@ -1,17 +1,33 @@
-let pokeList =[
-    {name: 'Tentacruel', height: 5, type: ['Water', 'Poison']},
-    {name: 'Seadra', height: 4, type: ['Water']},
-    {name: 'Starmie', height: 3,  type: ['Water', 'Psychic']},
-    {name: 'Seaking', height: 4, type: ['Water']},
-    {name: 'Lapras', height: 8, type: ['Water', 'Ice']},
-];
 
+ let pokemonRepository = (function () {
 
+    let pokeList =[
+     {name: 'Tentacruel', height: 5, type: ['Water', 'Poison']},
+     {name: 'Seadra', height: 4, type: ['Water']},
+     {name: 'Starmie', height: 3,  type: ['Water', 'Psychic']},
+        {name: 'Seaking', height: 4, type: ['Water']},
+     {name: 'Lapras', height: 8, type: ['Water', 'Ice']},
+    ];
+    function add(pokemon) {
+        pokemonList.push(pokemon);
+    }
 
-pokeList.forEach(function(pokemon) {
-    document.write("Name: ", pokemon.name, " Type: ", pokemon.type, " ", " Height: ", pokemon.height, " ", ("<br>"));
-    console.log(pokemon.name);
-});
+    function getAll() {
+        return pokeList;
+    }
+    
+    return {
+        add: add,
+        getAll: getAll
+    };
+
+})();
+console.log (pokemonRepository.getAll() );
+
+ pokemonRepository.getAll().forEach (pokemon => {
+     document.write("Name: ", pokemon.name, " Type: ", pokemon.type, " ", " Height: ", pokemon.height, " ", ("<br>"))
+     console.log(pokemon.name)
+ });
 
 
 
