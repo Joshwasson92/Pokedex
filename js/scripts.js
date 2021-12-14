@@ -4,25 +4,44 @@ let pokeList =[
     {name: 'Starmie', height: 3,  type: ['Water', 'Psychic']},
     {name: 'Seaking', height: 4, type: ['Water']},
     {name: 'Lapras', height: 8, type: ['Water', 'Ice']},
-]
+];
 
-for (let i = 0; i < pokeList.length; i++) {
-    let height = pokeList[i].height
-    let name = pokeList[i].name
-    let pokemonInfo = `<p> Name: ${name} Height: ${height}`
-    //Template String - 
-    if (height > 4) {
-     pokemonInfo += " Wow, Thats big! "
-    } 
-    if (height < 4) {
-        pokemonInfo += " That is a small Pokemon! "
-       } 
-       if (height === 4) {
-        pokemonInfo += " That is an average sized Pokemon! "
-       } 
-    pokemonInfo += "</p>"
-    document.write(pokemonInfo);
-}
+
+
+pokeList.forEach(function(pokemon) {
+    document.write("Name: ", pokemon.name, " Type: ", pokemon.type, " ", " Height: ", pokemon.height, " ", ("<br>"));
+    console.log(pokemon.name);
+});
+
+
+
+
+
+
+
+
+
+// Below are previous loop iterations 
+
+
+// for (let i = 0; i < pokeList.length; i++) {
+//     let height = pokeList[i].height
+//     let name = pokeList[i].name
+//     let pokemonInfo = `<p> Name: ${name} Height: ${height}`
+//     //Template String - 
+//     if (height > 4) {
+//      pokemonInfo += " Wow, Thats big! "
+//     } 
+//     if (height < 4) {
+//         pokemonInfo += " That is a small Pokemon! "
+//        } 
+//        if (height === 4) {
+//         pokemonInfo += " That is an average sized Pokemon! "
+//        } 
+//     pokemonInfo += "</p>"
+//     document.write(pokemonInfo);
+// }
+
   
  
 //  test while loop
