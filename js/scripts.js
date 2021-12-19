@@ -5,9 +5,10 @@
      {name: 'Tentacruel', height: 5, type: ['Water', 'Poison']},
      {name: 'Seadra', height: 4, type: ['Water']},
      {name: 'Starmie', height: 3,  type: ['Water', 'Psychic']},
-        {name: 'Seaking', height: 4, type: ['Water']},
+     {name: 'Seaking', height: 4, type: ['Water']},
      {name: 'Lapras', height: 8, type: ['Water', 'Ice']},
     ];
+
     function add(pokemon) {
         pokemonList.push(pokemon);
     }
@@ -16,26 +17,35 @@
         return pokeList;
     }
     
+    function showDetails(pokemon){
+        let pokemonInfo = document.getElementById('li')
+        console.log (pokemon.name, pokemon.type)
+
+    }
+
+    function addListItem(pokemon) {
+        let innerList = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerHTML = pokemon.name;
+        button.classList.add('pokebutton');
+        innerList.appendChild(button);
+        pList.appendChild(innerList);
+        button.addEventListener('click', function(){
+            showDetails(pokemon)});
+    }
+
     return {
-        add: add,
-        getAll: getAll
+        add ,
+        getAll ,
+        addListItem ,
+        showDetails ,
     };
-
+    
 })();
-console.log (pokemonRepository.getAll() );
+    console.log (pokemonRepository.getAll() );
 
- pokemonRepository.getAll().forEach (pokemon => {
-     document.write("Name: ", pokemon.name, " Type: ", pokemon.type, " ", " Height: ", pokemon.height, " ", ("<br>"))
-     console.log(pokemon.name)
- });
-
-
-
-
-
-
-
-
+let pList = document.querySelector('.pokemon-list')
+ pokemonRepository.getAll().forEach (pokemonRepository.addListItem);
 
 // Below are previous loop iterations 
 

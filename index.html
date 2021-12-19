@@ -17,7 +17,23 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+      <div class="poke-flex-container">
+          <div class="pokedex-grid"> 
+            <h1>Pokedex</h1>
+          </div>
+          <div class="pokemon-search-grid">
+              <input id="searchbar" onkeyup="search_pokemon()" type="text"
+                    name="search" placeholder="Search Pokemon">
+              <ul class="pokemon-list"></ul>
+          </div>
+          <div class="poke-picture-grid">
+            <img src="https://via.placeholder.com/225">
+          </div>
+          <div class="poke-bio-grid">  
+            <h1 class="pokemon-name">Pokemon Name Here</h1>
+            <p class="pokemon-bio">Pokemon bio will go here.</p>
+          </div>
+      </div> 
         <script src="js/scripts.js"></script>
     
         <footer class="page-footer">

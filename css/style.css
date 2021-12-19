@@ -4,4 +4,81 @@ body{
 }
 a{
     text-decoration: none;
+}}
+
+ul {
+    list-style-type: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .pokebutton {
+        text-decoration:solid;
+        background-color: #D3D3D3;
+        color: #253033;
+        padding: 17px 12px;
+        font-weight: 400;
+        display:inline-block;
+        box-sizing: border-box;
+        width:20%;
+        font-size: 9px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 6px;
+      }
+      .pokebutton:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      .pokebutton:active {
+          transform: scale(.95);
+      }
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .pokebutton {
+        text-decoration:solid;
+        background-color: #D3D3D3;
+        color: #253033;
+        padding: 17px 12px;
+        font-weight: 400;
+        display:inline-block;
+        box-sizing: border-box;
+        width:20%;
+        font-size: 7px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 6px;
+      }
+      .pokebutton:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+      .pokebutton:active {
+          transform: scale(.95);
+      }
+    
+}
+
+  .pokebutton {
+    text-decoration:solid;
+    background-color: #D3D3D3;
+    color: #253033;
+    padding: 17px 12px;
+    font-weight: 400;
+    display:inline-block;
+    box-sizing: border-box;
+    width:20%;
+    text-size-adjust: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 6px;
+  }
+
+  .pokebutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .pokebutton:active {
+      transform: scale(.95);
+  }
+
+  
