@@ -1,6 +1,7 @@
 body{
     background-color: #253033;
     color: #D3D3D3;
+    margin: 40px;
 }
 a{
     text-decoration: none;
@@ -81,4 +82,26 @@ ul {
       transform: scale(.95);
   }
 
+
+  .container {
+      display: grid;
+      height:100vh;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  }
   
+  #nav-search-bar {
+      background-color: aqua;
+  }
+  
+  .searchbar {
+      background-color: black;
+  }
+
+  .picture {
+      background-color: beige;
+  }
+
+  footer {
+      background-color: brown;
+  }

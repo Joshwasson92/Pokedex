@@ -17,23 +17,25 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <div class="poke-flex-container">
+      <div class="container">
           <div class="pokedex-grid"> 
-            <h1>Pokedex</h1>
+            <div="app-name">Pokedex</div>
           </div>
-          <div class="pokemon-search-grid">
+           <!-- <div class="nav-search-bar">
               <input id="searchbar" onkeyup="search_pokemon()" type="text"
-                    name="search" placeholder="Search Pokemon">
+                    name="search" placeholder="Search Pokemon">-->
               <ul class="pokemon-list"></ul>
-          </div>
-          <div class="poke-picture-grid">
+          </div>  
+          <!-- <div class="picture">
             <img src="https://via.placeholder.com/225">
-          </div>
-          <div class="poke-bio-grid">  
-            <h1 class="pokemon-name">Pokemon Name Here</h1>
-            <p class="pokemon-bio">Pokemon bio will go here.</p>
-          </div>
-      </div> 
+          </div> -->
+          <!-- <div class="pokemon-main">  
+            <div id="pokemon-name">Pokemon Name Here</div>
+            <div id="pokemon-content">Pokemon bio will go here.</div>
+          </div> -->
+
+        <script src="js/fetch-polyfill.js"></script>
+        <script src="js/promise-polyfill.js"></script>
         <script src="js/scripts.js"></script>
     
         <footer class="page-footer">
@@ -48,6 +50,7 @@
           <a target="_blank" href="https://www.linkedin.com/in/josh-wasson-94aa11222/">
             <img src="img/104452_linkedin_icon.svg" alt="LinkedIn" />
           </a>
+        </div> 
         </div>
       </footer>
     </body>
