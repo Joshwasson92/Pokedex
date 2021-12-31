@@ -3,12 +3,20 @@ body{
     color: #D3D3D3;
     margin: 40px;
 }
+
 a{
     text-decoration: none;
 }
 
 ul {
     list-style-type: none;
+    column-count: 4;
+    column-width: auto;
+}
+
+#app-name {
+    text-align: center;
+    font-size: 3em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -67,11 +75,15 @@ ul {
     font-weight: 400;
     display:inline-block;
     box-sizing: border-box;
-    width:20%;
+    width: 100%;
     text-size-adjust: auto;
     text-align: center;
     margin: 0 auto;
     padding: 6px;
+  }
+
+  .pokebutton::first-letter {
+      text-transform: capitalize;
   }
 
   .pokebutton:hover {
@@ -81,7 +93,6 @@ ul {
   .pokebutton:active {
       transform: scale(.95);
   }
-
 
   .container {
       display: grid;
@@ -98,10 +109,88 @@ ul {
       background-color: black;
   }
 
-  .picture {
-      background-color: beige;
+
+  .input-wrapper {
+      margin-bottom: 10px;
   }
 
-  footer {
-      background-color: brown;
+  label {
+      display: inline-block;
+      min-width: 75px;
   }
+
+  .error-message {
+      color: red;
+      font-size: 0.8em;
+  }
+
+#modal-container {
+    display: none;
+  }
+  
+  #modal-container.is-visible {
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    
+    /* to show it above other content */
+    z-index: 999; 
+    
+    /* to allow scrolling if the screen is not high enough*/
+    overflow: auto; 
+    
+    /* this is used to center the modal */
+    display: grid;
+    text-align: center;
+  }
+  
+  .modal {
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #D3D3D3;
+    color: #253033;
+    padding: 15px;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+  }
+  
+  .modal-close {
+    float: right;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    color: #777;
+    text-decoration: underline;
+    border: 2px solid black;
+  }
+
+  .modal-close:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .modal-close:active {
+    transform: scale(.95);
+}
+  
+  .modal h1 {
+    margin-top: 0;
+
+  }
+
+  .modal h1::first-letter {
+    text-transform: capitalize;
+
+  }
+
+  .modal p {
+    margin-bottom: 0;
+  }
+
+ 
