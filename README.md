@@ -1,4 +1,4 @@
-# Reefodex
+# Pokedex
 
 Welcome!
 
