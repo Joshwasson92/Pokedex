@@ -4,6 +4,7 @@
   flex-wrap:wrap;
   justify-content: space-between;
   gap:1em;
+  text-transform: capitalize;
 }
 
 body{
@@ -12,12 +13,9 @@ body{
   margin: 40px;
 }
 
-.navbar {
-padding: 5px;
-}
-
 .modal-content {
   background-color: #253033;
+  text-transform: capitalize;
 }
 
 .close {
@@ -25,4 +23,25 @@ padding: 5px;
 }
 .close:hover {
   color: #D3D3D3;
+}
+
+.d-flex{
+margin-top: 5%;
+}
+.btn{
+  background-color: #D3D3D3;
+  color: #253033;
+  text-transform: capitalize;
+}
+
+.btn:hover{
+  opacity:0.5;
+  background-color: #D3D3D3;
+  color: #253033;
+}
+
+.btn:target{
+  opacity:0.5;
+  background-color: #D3D3D3;
+  color: #253033;
 }

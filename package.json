@@ -1,0 +1,22 @@
+{
+  "name": "reefodex",
+  "version": "1.0.0",
+  "description": "Welcome!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshwasson92/Reefodex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshwasson92/Reefodex/issues"
+  },
+  "homepage": "https://github.com/Joshwasson92/Reefodex#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0"
+  }
+}
